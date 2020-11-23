@@ -1,58 +1,51 @@
-# # Reads in the top.html
-# # print('reading in html variables')
-# base_html = open('./templates/base.html').read()
-# # print(top_html)
+# You should have a “pages” list in the following format:4
 
-# # Reads in the bottom.html
-# # bottom_html = open('./templates/bottom.html').read()
-# # print(bottom_html)
+# Your list must contain dictionaries. Each dictionary has information3 about a page on your site. It must also contain a file path that can be used to read the contents of the page, and a file path of where you will eventually output the combined version of this page.
+pages = [
+  {
+  "filename": "content/about.html", "output": "docs/about.html", "title": "About Me"
+  },
+  {
+  "filename": "content/blog.html", "output": "docs/blog.html", "title": "My programming blog"
+  },
+  {
+  "filename": "content/blog.html", "output": "docs/blog.html", "title": "My programming blog"
+  }
+]
 
-# # Reads in the middle index.html
-# middle_html = open('./content/blog.html').read()
-# # print(middle_html)
+for page in pages:
+  # print(page['filename'])
+  # To access data within a dictionary, consider the following code as a clue:
+  # Where "page" is a dictionary with a key "title"
+  print(page) # Replace this line eventually with other stuff...
 
-# # combining all 3 files
-# # Assembles hte new index.html file by combining the top middle and bottom in that order
-# combined_html = base_html + middle_html
-# # print(combined_html)
+# Where "page" is a dictionary with a key "title"
+  page_title = page['filename']
+  print(page_title)
 
-# # Writes the new index.html file to a brand new file in the same directory
-# open('index.html', 'w+').write(combined_html)
+# def apply_template(content):
+#   # TODO: Read in template, do string replacing, and return result
+#   return results
 
+# def main():
+#   content = open(’docs/index.html’).read()
+#   resulting_html_for_index = apply_template(content)
 
-# # Reads in the middle index.html
-# middle_html = open('./content/projects.html').read()
+# def main():
+#   base_html = open('./templates/base.html').read()
+#   middle_html = open('./content/blog.html').read()
+#   combined_html = base_html + middle_html
+#   open('blog.html', 'w+').write(combined_html)
 
-# combined_html = base_html + middle_html
+#   middle_html = open('./content/projects.html').read()
+#   combined_html = base_html + middle_html
+#   open('projects.html', 'w+').write(combined_html)
 
-# # Writes the new index.html file to a brand new file in the same directory
-# open('projects.html', 'w+').write(combined_html)
+#   middle_html = open('./content/contact.html').read()
+#   combined_html = base_html + middle_html
+#   open('contact.html', 'w+').write(combined_html)
 
-# # Reads in the middle index.html
-# middle_html = open('./content/contact.html').read()
-
-# combined_html = base_html + middle_html
-
-# # Writes the new index.html file to a brand new file in the same directory
-# open('blog.html', 'w+').write(combined_html)
-
-
-
-def main():
-  base_html = open('./templates/base.html').read()
-  middle_html = open('./content/blog.html').read()
-  combined_html = base_html + middle_html
-  open('blog.html', 'w+').write(combined_html)
-
-  middle_html = open('./content/projects.html').read()
-  combined_html = base_html + middle_html
-  open('projects.html', 'w+').write(combined_html)
-
-  middle_html = open('./content/contact.html').read()
-  combined_html = base_html + middle_html
-  open('contact.html', 'w+').write(combined_html)
-
-main()
+# main()
 
 
 
