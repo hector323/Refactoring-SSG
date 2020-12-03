@@ -4,10 +4,10 @@ pages = [
   "filename": "content/blog.html", "output": "docs/index.html", "title": "My Personal Blogs"
   },
   {
-  "filename": "content/projects.html", "output": "docs/index.html", "title": "Projects"
+  "filename": "content/projects.html", "output": "docs/projects.html", "title": "Projects"
   },
   {
-  "filename": "content/contact.html", "output": "docs/index.html", "title": "About Me"
+  "filename": "content/contact.html", "output": "docs/contact.html", "title": "About Me"
   }
 ]
 
