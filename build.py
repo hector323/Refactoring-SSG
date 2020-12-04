@@ -24,7 +24,6 @@ def file_content(page_title):
 # needs both template and content pages
 def apply_template(template, content):
   # apply content page with template with using a placeholder {{content}} in the body
-  base_template = open("./templates/base.html").read()
   completed_page = template.replace("{{content}}", content)
   return completed_page
 
